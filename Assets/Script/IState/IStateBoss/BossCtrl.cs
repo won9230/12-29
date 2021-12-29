@@ -245,16 +245,11 @@ public class BossCtrl : LivingEntity
     {
         bossAnim.IsEnemySummons();
         yield return new WaitForSeconds(3f);
-        Enemysummons();
-        yield return new WaitForSeconds(0.3f);     
-        Enemysummons();
-        yield return new WaitForSeconds(0.3f);      
-        Enemysummons();
-        yield return new WaitForSeconds(0.3f);   
-        Enemysummons();  
-        yield return new WaitForSeconds(0.3f);   
-        Enemysummons();
-        yield return new WaitForSeconds(3f);
+        for (int i = 0; i < 5; i++)
+		{
+            yield return new WaitForSeconds(0.3f);
+            Enemysummons();
+        }
         ChangeState(eState.Trace);
     }
     private void Enemysummons()
