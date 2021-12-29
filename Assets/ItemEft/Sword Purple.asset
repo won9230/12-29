@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30ba8cb3f77661840a60f906234c467b, type: 3}
+  m_Name: Sword Purple
+  m_EditorClassIdentifier: 
+  name: Sword Purple
+  icon: {fileID: 21300000, guid: dec57b040169f5d47ba6db54b1f532f4, type: 3}
+  isDefaultItem: 0
+  equipSlot: 0
+  gameObject: {fileID: 1307640717761180496, guid: 579b3bb7f833f3e41bc72bece1bdb6d1,
+    type: 3}
+  damageModifier: 0
