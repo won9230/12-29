@@ -48,6 +48,8 @@ public class UI : MonoBehaviour
 		PlayerHp();
 		BossHp();
 		MainMap();
+		GameStart();
+		GameStop();
 	}
 	private void PlayerHp() //플레이어 Hp관련
 	{
@@ -87,6 +89,20 @@ public class UI : MonoBehaviour
 				Cursor.visible = false;
 				Cursor.lockState = CursorLockMode.Locked;
 			}
+		}
+	}
+	private void GameStop()
+	{
+		if (Input.GetKeyDown(KeyCode.L))
+		{
+			Time.timeScale = 0f;
+		}
+	}
+	private void GameStart()
+	{
+		if (Input.GetKeyDown(KeyCode.K))
+		{
+			Time.timeScale = 1f;
 		}
 	}
 }
