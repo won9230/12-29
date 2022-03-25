@@ -56,7 +56,7 @@ public class BossCtrl : LivingEntity
         m_states.Add(eState.FlyAttack2, new IStateBossFlyAttack2());
         m_states.Add(eState.Landing, new IStateBossLand());
         m_states.Add(eState.DIE, new IStateBossDIE());
-        m_sm = new IStateMachine<BossCtrl>(this, m_states[eState.Patrol]);
+        m_sm = new IStateMachine<BossCtrl>(this, m_states[eState.Patrol];)
 
         playerTr = PlayerCtrl.instance.transform;
         bossTr = this.transform;
